@@ -23,6 +23,6 @@ COPY certs ./certs
 
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
-EXPOSE 443
+EXPOSE 5000
 
 CMD ["python3", "app.py"]
