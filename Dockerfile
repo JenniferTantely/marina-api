@@ -19,7 +19,7 @@ RUN eval $(opam env) && make
 
 WORKDIR /app
 COPY app.py requirements.txt ./
-COPY certs ./certs
+# COPY certs ./certs
 
 RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
 
